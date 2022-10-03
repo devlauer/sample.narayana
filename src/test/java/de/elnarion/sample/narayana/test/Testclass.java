@@ -27,7 +27,8 @@ public class Testclass {
 	@Inject
 	private ServiceImpl serviceImpl;
 
-	@Test
+	 
+	@Test(expected = Test.None.class)
 	public void testSomething()
 	{
 		serviceImpl.doSomething();
